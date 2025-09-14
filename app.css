@@ -1,0 +1,16 @@
+.instagram-gradient {
+    color: #000; /* Default color */
+    background: linear-gradient(to bottom, #e1306c, #c13584, #833ab4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: all 0.3s ease;
+  }
+  
+  .instagram-gradient:hover {
+    color: transparent;
+    background: linear-gradient(to bottom, #e1306c, #c13584, #833ab4);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+  
