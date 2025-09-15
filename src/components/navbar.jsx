@@ -4,14 +4,14 @@ import Keshav_Agarwal_SDE_Resume from "../assets/Keshav_Agarwal_SDE_Resume.pdf"
 
 const Navbar = () => {
   return (
-    <nav className="mb-20 flex items-center justify-between py-6">
+  <nav className="mb-20 flex flex-col md:flex-row items-center justify-center md:justify-between py-6">
       {/* Logo Section */}
       <div className="flex flex-shrink-0 items-center">
             <img className="mx-2 w-20" src={logo} alt="logo" />
         </div>
 
       {/* Social Icons and Codulio Link */}
-      <div className="m-8 flex items-center justify-center gap-4 text-4xl">
+  <div className="mx-2 md:mx-8 flex items-center justify-center gap-4 text-2xl md:text-4xl overflow-x-auto">
         <a
           href="https://www.linkedin.com/in/keshav9880"
           target="_blank"
