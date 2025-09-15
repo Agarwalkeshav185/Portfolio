@@ -1,5 +1,5 @@
 import React from 'react'
-import { EDUCATION } from '../constants/index.js'
+import { EDUCATION } from '../constants'
 import{motion} from "framer-motion"
 
 const education = () => {
