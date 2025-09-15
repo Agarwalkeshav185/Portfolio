@@ -147,7 +147,7 @@ const Experiences = () => {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -60 }}
         transition={{ duration: 1.2 }}
-        className="my-20 text-center text-4xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent"
+        className="my-20 text-center text-4xl"
       >
         Work Experience
       </motion.h1>

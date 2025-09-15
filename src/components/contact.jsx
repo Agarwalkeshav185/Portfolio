@@ -4,7 +4,7 @@ import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaHeart, FaGithub, FaLinkedin, 
 
 const Contact = () => {
   return (
-    <div className="border-t border-neutral-800 pt-20 pb-12 bg-gradient-to-b from-neutral-950 to-neutral-900">
+    <div className="border-t border-neutral-800 pt-18 pb-12 bg-gradient-to-b from-neutral-950 to-neutral-900">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -80 }}
@@ -102,7 +102,7 @@ const Contact = () => {
         className="mt-8 text-center text-sm text-neutral-500"
       >
         <p className="flex items-center justify-center ">
-         Crafted with <FaHeart className="text-red-500 h-4 w-4 mx-1" /> by
+         Created with <FaHeart className="text-red-500 h-4 w-4 mx-1" /> by
           <span className="text-amber-400 font-semibold ml-1 mx-1">Keshav Agarwal </span>&copy; {new Date().getFullYear()} All Rights Reserved
         </p>
       </motion.div>

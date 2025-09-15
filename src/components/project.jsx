@@ -20,18 +20,16 @@ const project = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         initial={{ opacity: 0, y: 40 }}
                         transition={{ duration: 0.7, delay: index * 0.1 }}
-                        className="relative bg-neutral-900 rounded-2xl shadow-lg p-6 flex flex-col items-center hover:scale-105 transition-all duration-300 group overflow-visible"
+                        whileHover={{ scale: 1.04 }}
+                        className="relative bg-neutral-900 rounded-2xl shadow-lg p-6 flex flex-col items-center hover:scale-105 transition-all duration-300 group overflow-visible border border-neutral-800 overflow-hidden transition-all duration-300 group hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-500/20"
                     >
-                        {/* Gradient shadow below the card */}
-                        <div className="absolute left-1/2 -bottom-6 -translate-x-1/2 w-4/5 h-8 z-0 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-2xl pointer-events-none"
-                            style={{background: 'linear-gradient(90deg, #a78bfa 0%, #f472b6 60%, #64748b 100%)'}}></div>
                         <div className="relative z-10 w-full flex flex-col items-center">
                             <img
                                 src={project.image}
                                 alt={project.title}
                                 className="w-40 h-40 object-cover rounded-xl mb-4 border border-neutral-800"
                             />
-                            <h6 className="mb-2 font-semibold text-lg text-center">{project.title}</h6>
+                        <h6 className="mb-2 font-semibold text-lg text-center">{project.title}</h6>
                             <p className="mb-4 text-neutral-400 text-center text-sm">{project.description}</p>
                             <div className="flex flex-wrap justify-center gap-2">
                                 {project.technologies.map((tech, i) => (
@@ -43,12 +41,13 @@ const project = () => {
                                     </span>
                                 ))}
                             </div>
+                            
                         </div>
                     </motion.div>
                 ))}
             </div>
         </div>
-    )
+    );
 }
 
-export default project
+export default project;
