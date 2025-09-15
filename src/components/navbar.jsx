@@ -1,5 +1,5 @@
 import { FaGithub, FaInstagram, FaLinkedin, FaDownload } from "react-icons/fa";  // Importing the social media icons
-import logo from "../assets/Ka.png";  // Your custom logo
+import logo from "../assets/Ka_white.svg";  // Your custom logo
 import Keshav_Agarwal_SDE_Resume from "../assets/Keshav_Agarwal_SDE_Resume.pdf"
 
 const Navbar = () => {

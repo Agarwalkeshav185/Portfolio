@@ -12,12 +12,12 @@ const education = () => {
             className="my-20 text-center text-4xl">Education</motion.h2>
         <div> 
             {EDUCATION.map((edu,index) => (
-                <div key={index} className='mb-8 flex flex-wrap lg:justify-center'>
+                <div key={index} className='mb-8 flex flex-wrap justify-center'>
                     <motion.div 
                         whileInView={{opacity:1, x:0}}
                         initial={{opacity:0, x:-100}}
                         transition={{duration: 1}}
-                        className='w-full lg:w-1/4 flex justify-center items-start'>
+                        className='w-full lg:w-1/4 flex flex-wrap justify-center items-start'>
                         <img 
                             width={150}
                             height={150}
@@ -30,8 +30,8 @@ const education = () => {
                         whileInView={{opacity:1, x:0}}
                         initial={{opacity:0, x:100}}
                         transition={{duration:1}}
-                        className='w-full max-w-xl lg:w-3/4 flex flex-col justify-center'>
-                        <div className="flex gap-2 mb-2 flex-wrap items-center">
+                        className='w-full max-w-xl lg:w-3/4 flex flex-col flex-wrap lg:justify-center text-center lg:text-left mt-4 mx-4 lg:mt-0'>
+                        <div className="flex gap-2 mb-2 flex-wrap items-center justify-center lg:justify-start">
                             <span className="bg-neutral-800 text-white text-xs px-3 py-1 rounded-full font-semibold">{edu.timePeriod}</span>
                             <span className="bg-blue-200 text-blue-900 text-xs px-3 py-1 rounded-full font-semibold">PERCENT: {edu.percent}</span>
                         </div>
@@ -40,7 +40,7 @@ const education = () => {
                         <div className='text-xs text-neutral-500 mb-2'>{edu.location}</div>
                         <p className='mb-2 text-neutral-300 text-sm'>{edu.description}</p>
                         {edu.achievements && edu.achievements.length > 0 && (
-                            <div className="flex flex-wrap gap-2 mb-2">
+                            <div className="flex flex-wrap gap-2 mb-2 justify-center lg:justify-start w-full">
                                 {edu.achievements.map((ach, i) => (
                                     <span key={i} className="rounded bg-purple-200 px-2 py-1 text-xs font-medium text-purple-900">
                                         {ach}
