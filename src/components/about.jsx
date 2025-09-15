@@ -1,6 +1,6 @@
 import React from 'react'
 import aboutus from "../assets/about.jpg"
-import {ABOUT_TEXT} from "../constants"
+import {ABOUT_TEXT} from "../constants/index.js"
 import {motion} from "framer-motion"
 
 
