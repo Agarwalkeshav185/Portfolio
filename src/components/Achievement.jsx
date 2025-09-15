@@ -4,6 +4,7 @@ import { SiLeetcode, SiCodechef, SiFlipkart } from "react-icons/si";
 import AlgoUniversity from "../assets/algouniversity.png";
 import Meraki from '../assets/Meraki.png';
 import IIITU from '../assets/IIITU.jpg';
+import AAVESH from '../assets/AAVESH.webp';
 
 const AlgoUniversityIcon = () => (
   <img src={AlgoUniversity} alt="AlgoUniversity" className="w-full h-8" />
@@ -17,6 +18,10 @@ const IIITUIcon = () => (
   <img src={IIITU} alt="IIITU" className="w-full h-8" />
 );
 
+const AAVESHIcon = () => (
+  <img src={AAVESH} alt="IIITU" className="w-full h-8" />
+);
+
 const iconMap = {
   SiLeetcode: <SiLeetcode className="text-orange-500" />,
   SiCodechef: <SiCodechef className="text-brown-500" />,
@@ -24,6 +29,7 @@ const iconMap = {
   AlgoUniversityIcon: <AlgoUniversityIcon />,
   Meraki: <MerakiIcon />,
   IIITU: <IIITUIcon />,
+  AAVESH: <AAVESHIcon />,
 
   // add others as needed
 };
