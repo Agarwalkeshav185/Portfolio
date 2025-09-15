@@ -1,6 +1,6 @@
 import { FaGithub, FaInstagram, FaLinkedin, FaDownload } from "react-icons/fa";  // Importing the social media icons
 import logo from "../assets/Ka.png";  // Your custom logo
-import resume from "../assets/Resume.pdf"
+import Keshav_Agarwal_SDE_Resume from "../assets/Keshav_Agarwal_SDE_Resume.pdf"
 
 const Navbar = () => {
   return (
@@ -51,7 +51,7 @@ const Navbar = () => {
           />
         </a>
         <a
-          href={resume}
+          href={Keshav_Agarwal_SDE_Resume}
           download
           className="inline-flex items-center justify-center px-8 py-3 bg-gradient-to-r from-cyan-400 to-blue-500 text-white text-lg font-semibold rounded-full shadow-lg transform hover:scale-105 transition-all duration-300 ease-in-out"
         >
